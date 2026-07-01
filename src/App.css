@@ -1,0 +1,275 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  transition: 0.3s;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+/* ===========================
+   HEADING
+=========================== */
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ===========================
+   INPUT SECTION
+=========================== */
+
+.input-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background: #2563eb;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   BUTTON GROUP
+=========================== */
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+/* ===========================
+   TASK CARD
+=========================== */
+
+.task-card {
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 5px 12px rgba(0,0,0,.25);
+  transition: .3s;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+}
+
+.task-card p {
+  margin: 8px 0;
+}
+
+/* Priority */
+
+.task-card p:nth-child(2) {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* ===========================
+   STATS
+=========================== */
+
+.stats {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #1e293b;
+}
+
+.stats h3 {
+  margin: 8px 0;
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.container.dark {
+  background: #0f172a;
+  color: white;
+  min-height: 100vh;
+}
+
+.container.dark .task-card {
+  background: #1e293b;
+  color: white;
+}
+
+/* ===========================
+   LIGHT MODE
+=========================== */
+
+.container.light {
+  background: #f8fafc;
+  color: black;
+  min-height: 100vh;
+}
+
+.container.light .task-card {
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+}
+
+.container.light .stats {
+  background: #e5e7eb;
+  color: black;
+}
+
+/* ===========================
+   ACTION BUTTON COLORS
+=========================== */
+
+.pin-btn {
+  background: #facc15;
+  color: black;
+}
+
+.pin-btn:hover {
+  background: #eab308;
+}
+
+.edit-btn {
+  background: #22c55e;
+}
+
+.edit-btn:hover {
+  background: #16a34a;
+}
+
+.delete-btn {
+  background: #ef4444;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.done-btn {
+  background: #3b82f6;
+}
+
+.done-btn:hover {
+  background: #2563eb;
+}
+
+/* ===========================
+   COMPLETED TASK
+=========================== */
+
+.completed {
+  opacity: .6;
+}
+
+/* ===========================
+   TOAST
+=========================== */
+
+.Toastify__toast {
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.Toastify__progress-bar {
+  height: 4px;
+}
+
+.Toastify__toast-container {
+  margin-top: 20px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:768px){
+
+  .input-container,
+  .button-group{
+    flex-direction:column;
+  }
+
+  input,
+  select,
+  button{
+    width:100%;
+  }
+
+}
+/* ===========================
+   PROGRESS BAR
+=========================== */
+
+ /* Progress Bar */
+
+.progress-section {
+  margin-top: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: #d1d5db;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  transition: width 0.4s ease;
+}
+
+.progress-section p {
+  font-weight: bold;
+}
