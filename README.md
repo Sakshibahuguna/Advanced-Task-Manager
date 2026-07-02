@@ -1,16 +1,121 @@
-# React + Vite
+ # 🚀 Advanced Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Task Manager** built with **React.js** that helps users efficiently organize and manage their daily tasks. The application supports task prioritization, categories, due dates, dark/light mode, and persistent storage using Local Storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Example:
 
-## Expanding the ESLint configuration
+```
+📷 Home Page
+📷 Dark Mode
+📷 Light Mode
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+* ✅ Add, Edit & Delete Tasks
+* ⭐ Pin / Unpin Important Tasks
+* 🔍 Search Tasks
+* 📂 Task Categories
+* 🔴 Priority Levels (High, Medium, Low)
+* 📅 Due Dates
+* ✅ Mark Tasks as Completed
+* 📊 Progress Bar
+* 🌙 Dark / ☀️ Light Mode
+* 🔔 Toast Notifications
+* 💾 Local Storage Support
+* 📱 Responsive Design
+
+---
+
+## 🛠️ Tech Stack
+
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* React Toastify
+* Local Storage
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── TaskCard.jsx
+│   ├── TaskForm.jsx
+│   ├── SearchBar.jsx
+│   ├── Stats.jsx
+│   └── ThemeToggle.jsx
+│
+├── App.jsx
+├── App.css
+└── main.jsx
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Sakshibahuguna/Advanced-Task-Manager.git
+```
+
+Go to the project folder
+
+```bash
+cd Advanced-Task-Manager
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the application
+
+```bash
+npm run dev
+```
+
+---
+
+## 📚 What I Learned
+
+While building this project, I practiced and improved my understanding of:
+
+* React Components
+* React Hooks (`useState`, `useEffect`)
+* Props
+* State Management
+* CRUD Operations
+* Local Storage
+* Conditional Rendering
+* Array Methods (`map`, `filter`, `sort`)
+* Responsive UI Design
+
+---
+
+## 🎯 Future Improvements
+
+* Drag & Drop Tasks
+* Task Sorting
+* Overdue Task Highlighting
+* Firebase Authentication
+* Cloud Database Integration
+
+
+ 
+
+ 
